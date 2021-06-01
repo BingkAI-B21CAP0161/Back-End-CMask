@@ -37,14 +37,14 @@ class C_home extends CI_Controller {
             // );
             $hasil = exec('/usr/bin/python3 /opt/lampp/htdocs/backend/klasifikasi/test.py', $output, $ret_code);
 
-            
-            // var_dump($data);
-            $data = [
-                'data' => $upload_data,
-                'nama' => $file_name,
-                'hasil' => $hasil,
-            ];
-            $this->load->view('home/result', $data, FALSE);
+           echo $hasil; 
+            // // var_dump($data);
+            // $data = [
+            //     'data' => $upload_data,
+            //     'nama' => $file_name,
+            //     'hasil' => $hasil,
+            // ];
+            // $this->load->view('home/result', $data, FALSE);
             
         }
     }
